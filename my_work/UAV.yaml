@@ -1,0 +1,9 @@
+train: /root/autodl-tmp/UAV_dataset/my_train
+val: /root/autodl-tmp/UAV_dataset/my_val
+test: /root/autodl-tmp/UAV_dataset/my_test
+ 
+# number of classes
+nc: 1
+ 
+# class names
+names: ['UAV']
