@@ -18,7 +18,7 @@ for one_result in os.listdir(yolo_result_folder):
         #print(image_width, image_height)
         res=[]
         one_result_path=os.path.join(yolo_result_folder,one_result,'labels')
-        images_file_folder=os.path.join(images_folder,one_result)   #瀵瑰簲鍥剧墖鐨勬枃浠跺す
+        images_file_folder=os.path.join(images_folder,one_result)   #对应图片的文件夹
         image_file_list = sorted([f for f in os.listdir(images_file_folder) if f.endswith(".jpg")])
 
         
@@ -45,6 +45,6 @@ for one_result in os.listdir(yolo_result_folder):
         with open(save_path,'r') as r:
              origin=r.read()
         with open(save_path,"w") as w:
-             w.write("{\"res\": "+origin+"}")
+             w.write("{\"res\":"+origin+"}")
 
         
